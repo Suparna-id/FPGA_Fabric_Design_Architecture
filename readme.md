@@ -7,26 +7,26 @@ The project explores the FPGA design flow from **Verilog RTL to synthesis, techn
 
 ---
 
-## 📋 Repository Navigation
+## Repository Navigation
 
-* 📂 **[Day 1 - FPGA Fundamentals & Vivado](./Day1.md)**  
+*  **[Day 1 - FPGA Fundamentals & Vivado](./Day1.md)**  
   FPGA architecture, FPGA vs ASIC, LUTs, flip-flops, CLBs, Verilog counter design, Vivado simulation, synthesis, implementation, timing, power, resource utilization and VIO.
 
-* 📂 **[Day 2 - VTR & VPR FPGA CAD Flow](./Day2.md)**  
+*  **[Day 2 - VTR & VPR FPGA CAD Flow](./Day2.md)**  
   VTR/VPR flow, architecture files, EArch FPGA architecture, technology mapping, BLIF generation, packing, placement, routing, timing constraints and FPGA reports.
 
-* 📂 **[Day 3 - RISC-V / RVMYTH on FPGA](./Day3.md)**  
+*  **[Day 3 - RISC-V / RVMYTH on FPGA](./Day3.md)**  
   RISC-V/RVMYTH processor implementation, simulation, Vivado synthesis and implementation, FPGA resource analysis and ILA-based debugging.
 
-* 📂 **[Day 4 - Post-Synthesis & Post-Implementation Verification](./Day4.md)**  
+*  **[Day 4 - Post-Synthesis & Post-Implementation Verification](./Day4.md)**  
   Post-synthesis simulation, primitive models, timing verification, netlist analysis and post-implementation simulation.
 
-* 📂 **[Day 5 - SOFA FPGA Fabric & OpenFPGA](./Day5.md)**  
+*  **[Day 5 - SOFA FPGA Fabric & OpenFPGA](./Day5.md)**  
   SOFA FPGA fabric architecture, OpenFPGA flow, FPGA fabric generation, architecture mapping, routing resources, RISC-V implementation concepts and post-implementation analysis.
 
 ---
 
-## 🛠️ Tools & Technologies
+##  Tools & Technologies
 
 | Tool / Technology | Application |
 |---|---|
@@ -42,7 +42,7 @@ The project explores the FPGA design flow from **Verilog RTL to synthesis, techn
 
 ---
 
-## 🔬 Technical Areas Explored
+##  Technical Areas Explored
 
 ### FPGA Architecture
 
@@ -140,7 +140,7 @@ The actual error messages, investigation steps, fixes and results are documented
 
 ---
 
-## 📊 Analysis & Results
+##  Analysis & Results
 
 The project includes analysis of:
 
@@ -165,7 +165,7 @@ Exact numerical results are documented alongside the corresponding experiments.
 
 ---
 
-## 🎯 Project Outcomes
+##  Project Outcomes
 
 This project provided practical exposure to the complete FPGA implementation ecosystem:
 
@@ -175,7 +175,7 @@ The work helped build practical understanding of how **digital RTL, FPGA archite
 
 ---
 
-## 📚 References
+##  References
 
 ### VLSI System Design
 https://www.vlsisystemdesign.com/fpga/
