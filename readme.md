@@ -3,7 +3,7 @@
 
 This repository documents my hands-on work completed during the **FPGA Fabric Design & Architecture Workshop**, covering FPGA fundamentals, RTL design, Vivado implementation, timing and power analysis, open-source FPGA CAD flows, placement and routing, FPGA architecture exploration, SOFA/OpenFPGA, and RISC-V processor implementation.
 
-The project explores the FPGA design flow from **Verilog RTL to synthesis, technology mapping, placement, routing, timing analysis, resource utilization, power analysis, FPGA fabric generation, and post-implementation verification**.
+The project explores the FPGA design flow from Verilog RTL to synthesis, technology mapping, placement, routing, timing analysis, resource utilization, power analysis, FPGA fabric generation, and post-implementation verification.
 
 ---
 
@@ -136,7 +136,6 @@ The repository documents the troubleshooting process, including:
 - Netlist and primitive-model issues
 - Simulation environment problems
 
-The actual error messages, investigation steps, fixes and results are documented in the corresponding Day 1–Day 5 sections.
 
 ---
 
@@ -161,8 +160,6 @@ The project includes analysis of:
 - Post-implementation simulation
 - FPGA fabric generation results
 
-Exact numerical results are documented alongside the corresponding experiments.
-
 ---
 
 ##  Project Outcomes
@@ -182,9 +179,6 @@ https://www.vlsisystemdesign.com/fpga/
 
 ### RISC-V Based Microprocessor
 https://github.com/shivanishah269/risc-v-core
-
-### 4-Stage RISC-V Core
-https://github.com/ShonTaware/RISC-V_Core_4_Stage
 
 ### SOFA FPGA Framework
 https://github.com/lnis-uofu/SOFA
@@ -210,4 +204,4 @@ This repository documents my hands-on learning, implementation work, simulations
 
 ##  Project Focus
 
-**FPGA Architecture | RTL Design | Verilog | Vivado | VTR | VPR | Timing | Area | Power | Placement | Routing | EArch | SOFA | OpenFPGA | RISC-V**
+FPGA Architecture | RTL Design | Verilog | Vivado | VTR | VPR | Timing | Area | Power | Placement | Routing | EArch | SOFA | OpenFPGA | RISC-V
