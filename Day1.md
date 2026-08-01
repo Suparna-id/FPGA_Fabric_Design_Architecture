@@ -98,7 +98,7 @@ end
 endmodule
 
 
-
+---
 ## Behavioral Simulation
 
 Behavioral simulation was performed using the Vivado simulator to verify the functionality of the counter before synthesis.
