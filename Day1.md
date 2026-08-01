@@ -96,8 +96,9 @@ always @(posedge div_clk) begin
 end
 
 endmodule
----
+```
 
+---
 
 ## Behavioral Simulation
 
