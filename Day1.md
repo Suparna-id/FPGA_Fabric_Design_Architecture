@@ -99,6 +99,7 @@ endmodule
 
 
 ---
+
 ## Behavioral Simulation
 
 Behavioral simulation was performed using the Vivado simulator to verify the functionality of the counter before synthesis.
@@ -205,9 +206,7 @@ Hold timing ensures that data remains stable for the required period after the a
 
 Slack is defined as:
 
-\[
-Slack = Required\ Time - Arrival\ Time
-\]
+\[Slack = Required\ Time - Arrival\ Time\]
 
 Positive slack indicates that the timing requirement is satisfied.
 
