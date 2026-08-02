@@ -17,21 +17,24 @@ Some key features of OpenFPGA are:
 
 ---
 
-### Introduce to VPR
+## Introduce to VPR
 
 VPR (Versatile Place and Route) is an open source academic CAD tool designed for the exploration of new FPGA architectures and CAD algorithms, at the packing, placement and routing phases of the CAD flow. As input, VPR takes a description of an FPGA architecture along with a technology-mapped user circuit. It then performs packing, placement, and routing to map the circuit onto the FPGA. The output of VPR includes the FPGA configuration needed to implement the circuit and statistics about the final mapped design (eg. critical path delay, area, etc).
 
-## VPR GUI Visualisation**
+### VPR GUI Visualisation
 
 <img width="614" height="419" alt="Screenshot 2026-07-29 103436" src="https://github.com/user-attachments/assets/7b37b6d7-8680-4e76-8b2b-77735d41b6a0" /> 
+
 
 **Nets**
 
 <img width="954" height="415" alt="Screenshot 2026-07-29 105027" src="https://github.com/user-attachments/assets/19eacdf7-e0ae-402b-9b80-597ae73dae53" />
 
+
 **Critical Path**
 
 <img width="511" height="389" alt="Screenshot 2026-07-29 103940" src="https://github.com/user-attachments/assets/ea3e59c9-d9f3-4f0b-a034-5f350987d645" />
+
 
 **VPR utilization**
 
@@ -85,25 +88,25 @@ $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
 ```
 ---
 
-### Setup and hold Timing Analysis using VPR timing analysis
+## Setup and hold Timing Analysis using VPR timing analysis
 
 Setup timing checks whether data reaches destination registers before the active clock edge.
 
-## Setup Timing Report
+### Setup Timing Report
 <img width="525" height="368" alt="Screenshot 2026-07-29 173349" src="https://github.com/user-attachments/assets/b9e3d8bd-e0a1-4979-9ccb-2ae09e860af4" />
 
-## Hold Timing Report
+### Hold Timing Report
 <img width="495" height="178" alt="Screenshot 2026-08-02 101941" src="https://github.com/user-attachments/assets/d9fe4a5b-598b-4d82-afbb-3fa8db879b25" />
 
 ---
 
-### Introduction to VTR
+## Introduction to VTR
 
 VTR (Verilog-To-Routing) is a complete open-source FPGA CAD flow.
 
 <img width="457" height="367" alt="Screenshot 2026-08-02 102839" src="https://github.com/user-attachments/assets/223c4eaa-3986-4138-ac94-7bd714e251d8" />
 
-## VTR Flow Command
+### VTR Flow Command
 
 ```
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
@@ -180,10 +183,12 @@ After adding timing constraints:
 **Post Synthesis Simulation**
 
 Post synthesis simulation was performed using:
-
+```
 Generated post synthesis netlist
 SDF timing file
 Vivado simulator
+```
+
 **The generated files:**
 
 up_counter_post_synthesis.v
@@ -248,10 +253,12 @@ endmodule
 >> Gate-level functionality
 
 **Post Synthesis Waveform**
+
 <img width="539" height="180" alt="Screenshot 2026-07-30 184006" src="https://github.com/user-attachments/assets/cbedad99-17c5-435b-858b-011211146725" />
 
 
 ---
+
 ## Power Analysis using VTR
 
 Power estimation was performed using VTR power analysis flow.
@@ -267,14 +274,16 @@ $VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
 ```
 ---
 
-**stdout.log report**
+## stdout.log report
+
 <img width="535" height="337" alt="Screenshot 2026-08-02 111706" src="https://github.com/user-attachments/assets/c42bad77-5076-4fc9-a944-de4c7f38dfe2" />
 
 ---
 
 ## Power Report
-**Power Analysis**
+
+**Power Analysis report using VTR**
+
 <img width="550" height="403" alt="Screenshot 2026-08-02 112251" src="https://github.com/user-attachments/assets/011bfba2-ee86-4f19-a8c8-d3836e4f6b59" />
-Power estimation report generated using VTR.
 
 ---
