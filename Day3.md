@@ -22,8 +22,9 @@ The following files were used for the Mythcore processor implementation:
 ```text
 mythcore_test.v
 mythcore_test_gn.v
+```
+---
 
-----
 # RTL to Synthesis
 
 ## RTL Simulation Output
@@ -44,10 +45,10 @@ The package view displayed FPGA resource placement and I/O pin allocation.
 
 This helped in understanding:
 
->> Physical FPGA layout
->> Resource mapping
->> Pin assignments
->> FPGA routing regions
+- Physical FPGA layout
+- Resource mapping
+- Pin assignments
+- FPGA routing regions
 
 
 ## Package View Output
@@ -71,10 +72,10 @@ ILA Instantiation
 ```
 ila_0 your_instance_name (
     .clk(clk),
-
     .probe0(reset),
     .probe1(out)
 );
+
 ```
 ---
 
@@ -89,6 +90,7 @@ The following signals were connected:
 | `out` | Output probe |
 
 ---
+
 ## Constraint File
 
 <img width="358" height="183" alt="Screenshot 2026-07-31 182140" src="https://github.com/user-attachments/assets/d168302c-dd79-4a4f-9904-bc48c519d08c" />
