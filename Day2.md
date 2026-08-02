@@ -17,17 +17,24 @@ Some key features of OpenFPGA are:
 
 ---
 
-## VPR
+### Introduce to VPR
 
 VPR (Versatile Place and Route) is an open source academic CAD tool designed for the exploration of new FPGA architectures and CAD algorithms, at the packing, placement and routing phases of the CAD flow. As input, VPR takes a description of an FPGA architecture along with a technology-mapped user circuit. It then performs packing, placement, and routing to map the circuit onto the FPGA. The output of VPR includes the FPGA configuration needed to implement the circuit and statistics about the final mapped design (eg. critical path delay, area, etc).
 
-<img width="614" height="419" alt="Screenshot 2026-07-29 103436" src="https://github.com/user-attachments/assets/7b37b6d7-8680-4e76-8b2b-77735d41b6a0" />
-VPR GUI Visualisation
+**VPR GUI Visualisation**
+<img width="614" height="419" alt="Screenshot 2026-07-29 103436" src="https://github.com/user-attachments/assets/7b37b6d7-8680-4e76-8b2b-77735d41b6a0" /> 
+
+**Nets **
 <img width="954" height="415" alt="Screenshot 2026-07-29 105027" src="https://github.com/user-attachments/assets/19eacdf7-e0ae-402b-9b80-597ae73dae53" />
-Nets
+
+**Critical Path**
+
 <img width="511" height="389" alt="Screenshot 2026-07-29 103940" src="https://github.com/user-attachments/assets/ea3e59c9-d9f3-4f0b-a034-5f350987d645" />
-Critical Path
+
+VPR utilization
+
 <img width="705" height="416" alt="Screenshot 2026-07-29 142932" src="https://github.com/user-attachments/assets/64490a38-891e-4cdc-b256-bf59007a93c8" />
+
 VPR Utilization
 
 **To invoke VPR from terminal:**
@@ -51,7 +58,7 @@ $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
 ---
 
 **Timing Analysis using Constraints**
-Timing constraints were added using an SDC file.In order to perform timing analysis, a constraint file needs to be created. This constraint file is provided as an input to tool. To perform timing analysis from command-line, below mentioned switch should be enabled.
+Timing constraints were added using an SDC file.In order to perform timing analysis,a constraint file needs to be created. This constraint file is provided as an input to tool.To perform timing analysis from command-line, below mentioned switch should be enabled.
 The constraints file defines:
 
 **SDC Constraint File**
@@ -70,18 +77,21 @@ $VTR_ROOT/vtr_flow/benchmarks/blif/tseng.blif \
 --sdc_file tseng.sdc \
 --disp on
 ```
+---
+
 **Setup and hold Timing Analysis using VPR timing analysis**
 Setup timing checks whether data reaches destination registers before the active clock edge.
 
+**Setup Timing Report**
 <img width="525" height="368" alt="Screenshot 2026-07-29 173349" src="https://github.com/user-attachments/assets/b9e3d8bd-e0a1-4979-9ccb-2ae09e860af4" />
-Setup Timing Report
-<img width="495" height="178" alt="Screenshot 2026-08-02 101941" src="https://github.com/user-attachments/assets/d9fe4a5b-598b-4d82-afbb-3fa8db879b25" />
-Hold Timing Report
 
+**Hold Timing Report**
+<img width="495" height="178" alt="Screenshot 2026-08-02 101941" src="https://github.com/user-attachments/assets/d9fe4a5b-598b-4d82-afbb-3fa8db879b25" />
 
 ---
 
 ### Introduction to VTR
+
 VTR (Verilog-To-Routing) is a complete open-source FPGA CAD flow.
 
 <img width="457" height="367" alt="Screenshot 2026-08-02 102839" src="https://github.com/user-attachments/assets/223c4eaa-3986-4138-ac94-7bd714e251d8" />
@@ -117,12 +127,12 @@ always @(posedge clk) begin
 if (reset)
     out <= 4'b0000 ;
 else if (enable)
-    out <= out + 1'b0;
+    out <= out + 1'b1;
 end
 endmodule
 ```
-
-**The VTR flow generated:**
+---
+## The VTR flow generated:
 
 .net
 .place
@@ -134,14 +144,15 @@ Placement reports
 Nets and Logical Connections
 
 ---
+
 **The generated reports included:**
 
 <img width="486" height="413" alt="Screenshot 2026-07-30 164528" src="https://github.com/user-attachments/assets/92d446b4-bd8b-4ecd-bef0-f1bf1edc2d24" />
-critical Path 
+
 <img width="394" height="386" alt="Screenshot 2026-07-30 171355" src="https://github.com/user-attachments/assets/ed1240dd-e2f3-4260-a6aa-58417999be89" />
-Logical routing connections
 
 ---
+
 ## SDC Constraint File
 **Constraint File**
 ```
@@ -158,8 +169,10 @@ counter.pre-vpr.blif \
 --route_chan_width 100 \
 --sdc_file counter.sdc
 ```
+
 ## Setup Timing Report
 After adding timing constraints:
+
 <img width="491" height="340" alt="Screenshot 2026-08-02 110331" src="https://github.com/user-attachments/assets/3a91eb8b-fa69-45c9-a8a8-88aec83332ed" />
 
 ## Hold Timing Report 
@@ -229,6 +242,7 @@ endmodule
 ```
 ---
 ## Post Synthesis Simulation Results
+
 **The generated post synthesis simulation verified:**
 
 >> Timing behavior
@@ -237,7 +251,7 @@ endmodule
 
 **Post Synthesis Waveform**
 <img width="539" height="180" alt="Screenshot 2026-07-30 184006" src="https://github.com/user-attachments/assets/cbedad99-17c5-435b-858b-011211146725" />
-Post synthesis simulation waveform.
+
 
 ---
 ## Power Analysis using VTR
@@ -248,11 +262,13 @@ Power estimation was performed using VTR power analysis flow.
 ```
 $VTR_ROOT/vtr_flow/scripts/run_vtr_flow.py \
 counter.v \
-$VTR_ROOT/vtr_flow/arch/timing/k6_frac_N10_mem32K_40nm.xml \
+$VTR_ROOT/vtr_flow/arch/timing/EArch.xml \
 -power \
 -temp_dir . \
 -route_chan_width 100
 ```
+---
+
 **stdout.log report**
 <img width="535" height="337" alt="Screenshot 2026-08-02 111706" src="https://github.com/user-attachments/assets/c42bad77-5076-4fc9-a944-de4c7f38dfe2" />
 
@@ -263,3 +279,4 @@ $VTR_ROOT/vtr_flow/arch/timing/k6_frac_N10_mem32K_40nm.xml \
 <img width="550" height="403" alt="Screenshot 2026-08-02 112251" src="https://github.com/user-attachments/assets/011bfba2-ee86-4f19-a8c8-d3836e4f6b59" />
 Power estimation report generated using VTR.
 
+---
