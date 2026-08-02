@@ -1,5 +1,5 @@
 # FPGA Fabric Design & Architecture
-### End-to-End FPGA CAD Flow, Architecture Exploration & RISC-V Implementation
+## End-to-end FPGA CAD flow and fabric architecture exploration using Verilog, Vivado, VTR, VPR, OpenFPGA, SOFA, and RISC-V.
 
 This repository documents my hands-on work completed during the **FPGA Fabric Design & Architecture Workshop**, covering FPGA fundamentals, RTL design, Vivado implementation, timing and power analysis, open-source FPGA CAD flows, placement and routing, FPGA architecture exploration, SOFA/OpenFPGA, and RISC-V processor implementation.
 
@@ -124,18 +124,16 @@ RVMYTH RISC-V processor mapping onto the SOFA FPGA fabric, resource utilization,
 
 ##  Technical Debugging & Problem Solving
 
-During the practical work, several issues were encountered while working with FPGA design and CAD flows.
-
-The repository documents the troubleshooting process, including:
+During the practical sessions, I encountered and analyzed several issues related to FPGA design and open-source CAD flows, including:
 
 - RTL simulation and compilation issues
 - Vivado synthesis and implementation issues
 - Timing constraint problems
-- VTR/VPR flow errors
-- Architecture configuration issues
-- Placement and routing problems
-- Netlist and primitive-model issues
-- Simulation environment problems
+- VTR/VPR flow issues
+- Placement and routing challenges
+- Netlist and simulation issues
+
+These challenges helped me understand the practical aspects of debugging FPGA CAD flows and interpreting tool-generated reports.
 
 
 ---
@@ -202,7 +200,3 @@ I would like to express my sincere gratitude to **Kunal Ghosh – VSD Corp Pvt. 
 This repository documents my hands-on learning, implementation work, simulations, screenshots, diagrams, analysis reports and observations from the practical sessions.
 
 ---
-
-##  Project Focus
-
-FPGA Architecture | RTL Design | Verilog | Vivado | VTR | VPR | Timing | Area | Power | Placement | Routing | EArch | SOFA | OpenFPGA | RISC-V
