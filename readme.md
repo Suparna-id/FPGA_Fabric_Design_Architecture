@@ -9,20 +9,21 @@ The project explores the FPGA design flow from Verilog RTL to synthesis, technol
 
 ## Repository Navigation
 
-*  **[Day 1 - FPGA Fundamentals & Vivado](./Day1.md)**  
+**[Day 1 - FPGA Fundamentals & Vivado](./Day1.md)**  
   FPGA architecture, FPGA vs ASIC, LUTs, flip-flops, CLBs, Verilog counter design, Vivado simulation, synthesis, implementation, timing, power, resource utilization and VIO.
 
-*  **[Day 2 - VTR & VPR FPGA CAD Flow](./Day2.md)**  
+**[Day 2 - VTR & VPR FPGA CAD Flow](./Day2.md)**  
   VTR/VPR flow, architecture files, EArch FPGA architecture, technology mapping, BLIF generation, packing, placement, routing, timing constraints and FPGA reports.
 
-*  **[Day 3 - RISC-V / RVMYTH on FPGA](./Day3.md)**  
+**[Day 3 - RISC-V / RVMYTH on FPGA](./Day3.md)**  
   RISC-V/RVMYTH processor implementation, simulation, Vivado synthesis and implementation, FPGA resource analysis and ILA-based debugging.
 
-*  **[Day 4 - Post-Synthesis & Post-Implementation Verification](./Day4.md)**  
-  Post-synthesis simulation, primitive models, timing verification, netlist analysis and post-implementation simulation.
+**[Day 4 - Introduction to SOFA FPGA Fabric](./Day4.md)**
+SOFA FPGA architecture, SkyWater 130nm technology, OpenFPGA flow, counter implementation, area, timing, power and post-implementation analysis.
 
-*  **[Day 5 - SOFA FPGA Fabric & OpenFPGA](./Day5.md)**  
-  SOFA FPGA fabric architecture, OpenFPGA flow, FPGA fabric generation, architecture mapping, routing resources, RISC-V implementation concepts and post-implementation analysis.
+**[Day 5 -  RISC-V Core on Custom SOFA Fabric](./Day5.md)**
+RVMYTH RISC-V processor mapping onto the SOFA FPGA fabric, resource utilization, timing constraints, setup and hold analysis, and post-implementation verification.
+
 
 ---
 
